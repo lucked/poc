@@ -9,7 +9,6 @@ import GoldenLayout from 'golden-layout'
 window.React = React
 window.ReactDOM = ReactDOM
 
-var createReactClass = require('create-react-class');
 
 var myLayout = new GoldenLayout({
     content: [{
@@ -33,17 +32,11 @@ var myLayout = new GoldenLayout({
     }]
 });
 
-
-var TestComponent = createReactClass({
-    render: function() {
-        return (<h1>{this.props.label}</h1>)
-    }
-});
-
 myLayout.registerComponent( 'test-component', SymbolTicker );
 
 //Once all components are registered, call
 myLayout.init();
+
 
 //ReactDOM.render(<SymbolTicker />, document.getElementById('root'));
 registerServiceWorker();

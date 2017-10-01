@@ -11,7 +11,7 @@ class Something extends Component{
 
     render() {
         return (
-            <div className="row">
+            <div className="container" id="main">
                 <p>Something</p>
             </div>
         );

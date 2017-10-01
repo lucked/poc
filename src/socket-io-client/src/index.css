@@ -68,6 +68,14 @@ th {
   width: 45% !important;
 }
 
+.ag-cell{
+  color: #000;
+}
+
+.ag-body-viewport {
+  background-color: #222222;
+}
+
 .standard-cell{
   background-color: transparent;  
   color: #FFE761;  

@@ -1,5 +1,7 @@
 'use strict';
 
+var APP_DIR = path.resolve(__dirname, 'src');
+
 module.exports = [{
   module: {
     loaders: [
@@ -8,6 +10,12 @@ module.exports = [{
         loaders: ["jsx-loader?insertPragma=React.DOM&harmony"],
       }
     ],
+  },
+  resolve: {
+      alias: {
+          "ag-grid-root" : __dirname + "/node_modules/ag-grid"
+      },
+      extensions: ['', '.js', '.jsx']
   },
   externals: {
     //don't bundle the 'react' npm package with our bundle.js

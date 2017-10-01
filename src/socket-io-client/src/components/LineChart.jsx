@@ -8,7 +8,7 @@ import feed from '../data/feed';
   constructor(props)
   {
     super(props)
-    this.buffersize = 10;
+    this.buffersize = 100;
     this.point = 0;
     feed.watch(['FRAK']);
     feed.onChange( data =>
@@ -50,7 +50,7 @@ import feed from '../data/feed';
 
   onChange(newdata) {
 
-    if(this.point % 100 === 0)
+    if(this.point % 10 === 0)
     {
         const size = this.data.datasets[0].data.length
         if (size >= this.buffersize)

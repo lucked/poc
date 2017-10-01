@@ -8,6 +8,9 @@ import GoldenLayout from 'golden-layout'
 import Something from './components/Something.jsx';
 import ScatterPlot from './components/ScatterPlot.jsx';
 import LineChart from './components/LineChart.jsx';
+import TradeBlotter from './components/TradeBlotter.jsx';
+import "../node_modules/ag-grid/dist/styles/ag-grid.css";
+import "../node_modules/ag-grid/dist/styles/theme-fresh.css";
 
 window.React = React
 window.ReactDOM = ReactDOM
@@ -36,7 +39,7 @@ var myLayout = new GoldenLayout({
                 content:[{
                     title: 'Trade Blotter',
                     type:'react-component',
-                    component: 'something'
+                    component: 'blotter'
                 }]
             },
             {
@@ -46,7 +49,7 @@ var myLayout = new GoldenLayout({
                         type: 'stack',
                         content: [{
                             type: 'stack',
-                            title: 'Stack A',
+                            title: 'Symbol Charts',
                             content: [
                                 {
                                     title: 'Line Chart',
@@ -74,6 +77,7 @@ myLayout.registerComponent( 'ticker', SymbolTicker );
 myLayout.registerComponent( 'something', Something );
 myLayout.registerComponent( 'scatterplot', ScatterPlot );
 myLayout.registerComponent( 'linechart', LineChart );
+myLayout.registerComponent( 'blotter', TradeBlotter );
 
 //Once all components are registered, call
 myLayout.init();

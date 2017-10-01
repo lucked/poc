@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 
 class SymbolRow extends Component{
+    constructor(props) {
+    super(props);
+    this.unwatch = this.unwatch.bind(this);
+    }
+
     unwatch() {
         this.props.unMonitorSymbolHandler(this.props.stock.symbol);
     }

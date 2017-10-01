@@ -3,7 +3,9 @@ import React, { Component } from "react";
 class MonitorSymbol extends Component{
     constructor() {
         super();
-            this.state = {symbol: ""};
+        this.state = {symbol: ""};
+        this.MonitorSymbol = this.MonitorSymbol.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
 
     MonitorSymbol() {
@@ -20,7 +22,8 @@ class MonitorSymbol extends Component{
             <div className="row">
                 <p>Choose from tickers: FRAK, VEGI, CPI, IAU, DOG, OIL, CORN, FAN, TAN, MOO</p>
                 <div className="input-group">
-                    <input type="text" className="form-control" placeholder="Comma separated list of stocks to watch..." value={this.state.symbol} onChange={this.handleChange} />
+                    <input type="text" className="form-control" placeholder="Comma separated list of stocks to watch..." 
+                    value={this.state.symbol} onChange={this.handleChange} />
                     <span className="input-group-btn">
                         <button className="btn btn-default" type="button" onClick={this.MonitorSymbol}>
                             <span className="glyphicon glyphicon-eye-open" aria-hidden="true"></span> Watch

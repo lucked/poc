@@ -10,6 +10,7 @@
     "react": "^16.0.0",
     "react-chartjs-2": "^2.6.2",
     "react-dom": "^16.0.0",
+    "react-fusioncharts": "^1.0.4",
     "react-scripts": "1.0.14",
     "socket.io-client": "^2.0.3"
   },

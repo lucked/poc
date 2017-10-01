@@ -26,6 +26,7 @@ th, td {
   width: 74px;
   border: solid 1px #DDDDDD;
   padding: 5px;
+  color: #FFE761;
 }
 
 th {
@@ -52,14 +53,24 @@ th {
 
 .row {
   margin: 10px 0;
+  color: #FFE761;
 }
 
 .container {
   width: 350px;
 }
 
+.input-group {
+  width: 45% !important;
+}
+
+.alert, .alert-warning {
+  width: 45% !important;
+}
+
 .standard-cell{
-  background-color: white;    
+  background-color: transparent;  
+  color: #FFE761;  
   /* transition the background-color over 1s with a linear animation */
   transition: background-color 1s linear;
 }

@@ -77,7 +77,4 @@ myLayout.registerComponent( 'linechart', LineChart );
 
 //Once all components are registered, call
 myLayout.init();
-
-
-//ReactDOM.render(<SymbolTicker />, document.getElementById('root'));
 registerServiceWorker();

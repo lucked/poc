@@ -1,0 +1,22 @@
+directories:
+  output: dist
+  buildResources: build
+appId: dashboardV0.0.1
+dmg:
+  contents:
+    - x: 110
+      'y': 150
+    - x: 240
+      'y': 150
+      type: link
+      path: /Applications
+linux:
+  target:
+    - AppImage
+    - deb
+win:
+  target: NSIS
+  icon: icon.ico
+nsis:
+  menuCategory: Company Apps
+electronVersion: 1.7.11

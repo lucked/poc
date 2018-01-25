@@ -30,6 +30,7 @@
     "react-start": "set BROWSER=nul && react-scripts start"
   },
   "devDependencies": {
-    "electron": "^1.7.11"
-  }  
+    "electron": "^1.7.11",
+    "foreman": "^2.0.0"
+  }
 }

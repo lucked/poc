@@ -1,9 +1,0 @@
-version: 0.0.1
-files:
-  - url: Dashboard-Setup-0.0.1.exe
-    sha512: 6R30gm0ASv3vfsfM0bt03zQyGT0YZGOJjSne84B7tRWRB7f4v13CYoyX1UbE6nJyxiWoBFkmYooGKoGJFtnG7Q==
-    size: 40308223
-path: Dashboard-Setup-0.0.1.exe
-sha512: 6R30gm0ASv3vfsfM0bt03zQyGT0YZGOJjSne84B7tRWRB7f4v13CYoyX1UbE6nJyxiWoBFkmYooGKoGJFtnG7Q==
-sha2: 1e3a727d402197610416149a0b630ba1fe9ef0b9439ba5b59a6edce9709ecc03
-releaseDate: '2018-01-25T13:37:05.667Z'

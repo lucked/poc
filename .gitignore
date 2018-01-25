@@ -1,3 +1,4 @@
 /src/node_modules
 /src/socket-io-server/node_modules
 /src/electron-package/node_modules
+dist
